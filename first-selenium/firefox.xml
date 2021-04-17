@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Firefox_test_forms_page">
+    <test name="Firefox_Test_forms_page">
+        <parameter name="browserName" value="FIREFOX"></parameter>
+        <classes>
+            <class name="com.demoqa.tests.PractiseFormTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Chrome_test_forms_page">
+    <test name="Chrome_Test_forms_page">
+        <parameter name="browserName" value="CHROME"></parameter>
+        <classes>
+            <class name="com.demoqa.tests.SliderTest"/>
+        </classes>
+    </test>
+</suite>
