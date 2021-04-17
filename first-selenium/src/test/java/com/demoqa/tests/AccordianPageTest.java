@@ -13,7 +13,5 @@ public class AccordianPageTest extends Global {
     accordianPage.expendSection2Heading();
     accordianPage.expendSection3Heading();
 //    accordianPage.testFirstQuestionandAnswerText();
-
-
     }
 }
