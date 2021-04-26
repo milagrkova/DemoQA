@@ -120,7 +120,7 @@ public class PractiseFormPage {
 
     public void testSubmitForm() {
         String actualName = driver.findElement(By.xpath("/html/body/div[3]/div/div/div[2]/div/table/tbody/tr[1]/td[2]")).getText();
-        softassert.assertEquals(actualName, "Mila Grkova");
+        softassert.assertEquals(actualName, "Mila Grkovaaa");
         String actualEmail = driver.findElement(By.xpath("/html/body/div[3]/div/div/div[2]/div/table/tbody/tr[2]/td[2]")).getText();
         softassert.assertEquals(actualEmail, "testiramila@gmail.com");
         String actualmNum = driver.findElement(By.xpath("/html/body/div[3]/div/div/div[2]/div/table/tbody/tr[4]/td[2]")).getText();

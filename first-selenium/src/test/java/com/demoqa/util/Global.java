@@ -1,18 +1,14 @@
 package com.demoqa.util;
 
 import com.demoqa.pages.*;
+import com.demoqa.pages.interactions.*;
+import com.demoqa.pages.widges.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.safari.SafariDriver;
-import org.openqa.selenium.safari.SafariOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
 
-import javax.tools.Tool;
 import java.util.concurrent.TimeUnit;
 
 
@@ -35,6 +31,9 @@ public class Global {
     public SelectablePage selectablePage;
     public DragAndDropPage dragAndDropPage;
     public ResizablePage resizablePage;
+    public SortablePage sortablePage;
+    public DragPage dragPage;
+    public ProgressBarPage progressBarPage;
 
 //    @Parameters({"browserName"})
     @BeforeMethod
@@ -74,12 +73,9 @@ public class Global {
         selectablePage = new SelectablePage(driver, wait);
         dragAndDropPage = new DragAndDropPage(driver, wait);
         resizablePage = new ResizablePage(driver, wait);
-
-
-
-
-
-
+        sortablePage = new SortablePage(driver, wait);
+        dragPage = new DragPage(driver, wait);
+        progressBarPage = new ProgressBarPage(driver, wait);
     }
 
     @AfterMethod
